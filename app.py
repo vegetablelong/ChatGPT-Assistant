@@ -58,9 +58,7 @@ if authentication_status:
         # 设置完成
         st.session_state["initial_settings"] = True
 
-    # logout
-    authenticator.logout("Logout", "sidebar")
-    st.siddbar.title(f"Welcome {name}")
+
     with st.sidebar:
         st.markdown("# 🤖 聊天窗口")
         # 创建容器的目的是配合自定义组件的监听操作
