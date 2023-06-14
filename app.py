@@ -128,9 +128,6 @@ with st.sidebar:
     - 双击页面可直接定位输入栏
     - Ctrl + Enter 可快捷提交问题
     """)
-    st.markdown('<a href="https://github.com/PierXuY/ChatGPT-Assistant" target="_blank" rel="ChatGPT-Assistant">'
-                '<img src="https://badgen.net/badge/icon/GitHub?icon=github&amp;label=ChatGPT Assistant" alt="GitHub">'
-                '</a>', unsafe_allow_html=True)
 
 # 加载数据
 if "history" + current_chat not in st.session_state:
