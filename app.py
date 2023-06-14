@@ -58,10 +58,10 @@ if authentication_status:
         # 设置完成
         st.session_state["initial_settings"] = True
 
-
+    # logout
+    authenticator.logout("Logout", "sidebar")
+    st.sidebar.title(f"ZZL PERSONAL")
     with st.sidebar:
-        # logout
-        authenticator.logout("Logout", "siderbar")
         st.markdown("# 🤖 聊天窗口")
         # 创建容器的目的是配合自定义组件的监听操作
         chat_container = st.container()
