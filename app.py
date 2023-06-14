@@ -17,8 +17,8 @@ st.set_page_config(page_title='ChatGPT Assistant', layout='wide', page_icon='ðŸ¤
 st.markdown(css_code, unsafe_allow_html=True)
 
 # USER AUTHENTICATION
-names = ["Zhao", "Guest"]
-usernames = ["zhao", "guest"]
+names = ["Zhao", "Guest", "Du", "ZYY"]
+usernames = ["zhao", "guest", "du", "zyy"]
 # load hashed passwords
 file_path = Path(__file__).parent / "hashed_pw.pkl"
 with file_path.open("rb") as file:
